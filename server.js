@@ -4,7 +4,7 @@ import ejs from "ejs";
 import path from "path";
 
 const app = express();
-const port = process.env.PORT || 3980;
+const port = process.env.PORT || 4100;
 const _dirname = path.resolve();
 
 app.use(express.static(path.join(_dirname, "public")));
@@ -47,6 +47,16 @@ res.sendFile(filePath);
 app.get("/Elevator-Pitch.html", (req, res) => {
 
     const filePath = path.join(_dirname,"public/Pages", "Elevator-Pitch.html");
+
+res.sendFile(filePath);
+
+
+});
+
+
+app.get("/Pitch-video.html", (req, res) => {
+
+    const filePath = path.join(_dirname,"public/Pages", "Pitch-video.html");
 
 res.sendFile(filePath);
 
