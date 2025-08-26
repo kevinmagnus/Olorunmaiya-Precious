@@ -8,6 +8,7 @@ body {
     
 }
 
+
 div {
 
     border: solid 5px grey;
@@ -58,10 +59,8 @@ a {
 
 nav {
 
-    display: flex;
-    align-items: center;
-    width: 100%;
-
+    position: absolute;
+    margin: 20px;
 }
 
 p {
